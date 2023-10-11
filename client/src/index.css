@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter" !important;
+}
+
+body {
+  background: #181b21;
+  overflow-x: hidden !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+svg {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+/* Custom Styles */
+.customContainer {
+  padding: 80px 0;
+}
+
+.mt {
+  margin-top: 115px;
+}
+
+.long {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4 !important;
+  -webkit-box-orient: vertical !important;
+}
+
+.short {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+}
+
+.linearGradientWord {
+  background-color: rgba(255, 255, 255, 0.20) !important;
+  background-image: radial-gradient(206.58% 199.41% at 16.85% 10%, #EC1D1D 0%, #4B2EFF 36.98%, #2ECDFF 65.1%, #9F54FF 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+  font-size: 28px !important;
+}
+
+.linearGradientWord:hover {
+  background-color: #FFFFFF !important;
+  background-image: radial-gradient(#ffffff, #ffffff) !important;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+
+}
+
+.MuiList-root {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px !important;
+}
+
+.css-vdg7h5-MuiFormLabel-root-MuiInputLabel-root,
+.css-knsowb-MuiFormLabel-root-MuiInputLabel-root {
+  color: #FFFFFF80 !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #FFFFFF !important;
+}
+
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input,
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #FFFFFF !important;
+}
+
+.css-wjh20t-MuiPagination-ul li button {
+  border-color: #FFFFFF80 !important;
+  color: #FFFFFF80;
+}
+
+/* Loader */
+.loaderContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.balls {
+  width: 5em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.balls div {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: rgba(139, 227, 255, 0.90);
+}
+
+.balls div:nth-of-type(1) {
+  transform: translateX(-100%);
+  animation: left-swing 0.5s ease-in alternate infinite;
+}
+
+.balls div:nth-of-type(3) {
+  transform: translateX(-95%);
+  animation: right-swing 0.5s ease-out alternate infinite;
+}
+
+@keyframes left-swing {
+
+  50%,
+  100% {
+    transform: translateX(95%);
+  }
+}
+
+@keyframes right-swing {
+  50% {
+    transform: translateX(-95%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Navbar */
+.customLogo {
+  width: 75px;
+}
+
+.customList {
+  padding: 10px 20px !important;
+}
+
+.customListItemButton {
+  border-radius: 20px !important;
+}
+
+.customListItemButton .MuiListItemIcon-root svg {
+  color: #000 !important;
+}
+
+/* Hero */
+.heroContentLeft {
+  background-size: contain;
+}
+
+.heroContentRight {
+  position: relative;
+}
+
+.heroGalleryItem {
+  position: absolute !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border-radius: 0px !important;
+  overflow: hidden !important;
+}
+
+.heroGalleryItem img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.40), 0px 3px 4px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+}
+
+/* Yotube Context */
+.yotubeCard {
+  border-radius: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.60), 0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  border: 4px solid #FFFFFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yotubeCard video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Projects */
+.projectsList {
+  position: relative;
+  height: 100%;
+  justify-content: center;
+}
+
+.projectsListItem {
+  border-radius: 24px;
+  backdrop-filter: blur(8px);
+  background: radial-gradient(100% 80% at 50% 0%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.60), 0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  overflow: hidden !important;
+  border: 1px solid #ffffff10;
+}
+
+
+/* Custom Project */
+.customPoject {
+  background: url("./assets/projectShadow.png") no-repeat left bottom;
+  background-size: contain;
+
+}
+
+.projectContent {
+  /* background: linear-gradient(290deg, #5F9FFF 8.7%, rgba(1, 7, 26, 0.00) 69.89%), linear-gradient(180deg, #98FFCE 0%, rgba(131, 143, 255, 0.49) 49.48%, rgba(96, 178, 255, 0.00) 100%); */
+  background: var(--grey-grey-100, #15161A);
+  border-radius: 40px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.projectScreen {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.60), 0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(12px);
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+/* Features */
+.featuresShadow {
+  position: relative;
+}
+
+.featuresShadow::after {
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(71.53% 41.53% at 95% 10%, rgba(244, 94, 61, 0.15) 0%, rgba(244, 61, 237, 0.00) 100%);
+  position: absolute;
+  top: -25px;
+  right: 25px;
+  z-index: -1;
+  transform: skew(-10deg) rotate(-5deg);
+}
+
+.featuresBox {
+  transform: rotate(-25deg);
+  position: relative;
+  left: -100px;
+}
+
+.featuresBoxList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.featuresBoxList div {
+  margin: 5px;
+
+  width: 165px;
+  height: 265px;
+  border-radius: 32px !important;
+  background: var(--white-white-10, rgba(255, 255, 255, 0.10)) !important;
+  box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.60), 0px 8px 12px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.04);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.featuresBoxList div:hover {
+  box-shadow: none;
+}
+
+.featuresBoxList div img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Swiper */
+.mySwiper {
+  padding: 40px 0 !important;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 550px !important;
+  overflow: hidden !important;
+  border-radius: 24px;
+}
+
+.clientCard {
+  padding: 14px;
+  border: 1px solid #9196A5 !important;
+  border-radius: 24px !important;
+  background: radial-gradient(53.31% 83.31% at 70% 9.39%, rgba(139, 227, 255, 0.20) 0%, rgba(139, 255, 192, 0.00) 100%) !important;
+  overflow: hidden !important;
+}
+
+.clientCardContent {
+  min-height: 180px;
+}
+
+/* FooterBg */
+.footerContent {
+  padding-top: 100px;
+  height: 704px;
+  background: url("./assets/footerShadow.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+/* Single Project Page */
+.singleProjectBanner {
+  overflow: hidden !important;
+  border-radius: 24px !important;
+  background: radial-gradient(93.31% 200.31% at 48% 50.39%, rgba(139, 227, 255, 0.20) 0%, rgba(139, 255, 192, 0.00) 100%) !important;
+  box-shadow: 0px 24px 36px 0px rgba(0, 0, 0, 0.60), 0px 8px 12px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.04);
+  padding: 57px 47px 0px 87px;
+}
+
+.singleProjectBanner img {
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.singleProjectSwiper {
+  padding: 25px 0 !important;
+}
+
+.singleProjectSwiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 0px !important;
+}
+
+@media screen and (max-width: 999.98px) {
+  .featuresBox {
+    left: -75px;
+  }
+
+  .featuresBoxList div {
+    width: 120px;
+    height: 190px;
+  }
+
+  .featuresBoxList div img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footerContent {
+    height: 554px;
+  }
+}
+
+@media screen and (max-width: 779.98px) {
+  .customContainer {
+    padding: 60px 0;
+  }
+
+  .mt {
+    margin-top: 100px;
+  }
+
+  .featuresBox {
+    left: -40px;
+  }
+
+  .featuresBoxList div {
+    margin: 3px;
+    width: 85px;
+    height: 125px;
+    border-radius: 22px !important;
+  }
+
+  .featuresBoxList div img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .clientCardContent {
+    min-height: 140px;
+  }
+
+  .footerContent {
+    padding-top: 50px;
+    height: 504px;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .customContainer {
+    padding: 35px 0;
+  }
+
+  .mt {
+    margin-top: 80px;
+  }
+
+  .customLogo {
+    width: 65px;
+  }
+
+  .featuresShadow::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(31.53% 31.53% at 95% 10%, rgba(244, 94, 61, 0.15) 0%, rgba(244, 61, 237, 0.00) 100%);
+    top: -15px;
+    right: 15px;
+  }
+
+  .featuresBox {
+    left: -20px;
+    transform: rotate(-20deg);
+  }
+
+  .featuresBoxList div {
+    width: 55px;
+    height: 80px;
+    border-radius: 12px !important;
+  }
+
+  .featuresBoxList div img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .clientCardContent {
+    min-height: 100px;
+  }
+
+  .footerContent {
+    height: 404px;
+  }
+}
