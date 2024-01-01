@@ -1,15 +1,15 @@
-import { Box, Button, Container, Grid, Pagination, Typography } from '@mui/material'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Box, Button, Container, Grid, Pagination, Typography } from '@mui/material'
 
-import { urlFor, client } from '../client';
 import Loader from '../Components/Loader';
+import LazyImage from '../Components/LazyImage';
+import { client } from '../client';
 
 const ProjectsPage = () => {
   const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);
   const [projects, setProjects] = useState([])
-
 
   useEffect(() => {
     const query = '*[_type == "projects"]';
@@ -39,7 +39,7 @@ const ProjectsPage = () => {
             <Grid item xs={12} md={7} className='projectsListItem'>
               <Link to={`/projects/${item?._id}`}>
                 <Box sx={{ height: { sx: "200px", md: "400px" } }} borderRadius="24px" overflow="hidden" >
-                  <img width="100%" height="100%" style={{ objectFit: "cover" }} src={urlFor(item?.imageUrl)?.url()} alt={item?.title} />
+                  <LazyImage width="100%" height="100%" style={{ objectFit: "cover" }} item={item} alt={item?.title} />
                 </Box>
               </Link>
             </Grid>

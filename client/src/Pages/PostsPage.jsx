@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Container, Grid, Typography, Box, Pagination } from '@mui/material'
 
-import { urlFor, client } from '../client';
+import { client } from '../client';
 import Loader from '../Components/Loader';
+import LazyImage from '../Components/LazyImage';
 
 const PostsPage = () => {
   const itemsPerPage = 6;
@@ -36,7 +37,7 @@ const PostsPage = () => {
         {
           postToShow.map((post) => (
             <Grid key={post?._id} component="a" href={`/posts/${post?._id}`} sx={{ minWidth: { xs: "290px", md: "380px" }, height: { xs: "450px", sm: "490px", md: "550px", lg: "670px" } }} item xs={6} md={3} className='projectsListItem' >
-              <img style={{ borderRadius: "18px" }} width="100%" height="100%" src={urlFor(post?.imageUrl).url()} alt={post?.title} />
+              <LazyImage style={{ borderRadius: "18px" }} width="100%" height="100%" item={post} alt={post?.title} />
             </Grid>
           ))
         }

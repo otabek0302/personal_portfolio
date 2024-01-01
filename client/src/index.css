@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+@import url('swiper/css');
+@import url('swiper/css/effect-coverflow');
+@import url('swiper/css/pagination');
 
 * {
   padding: 0;
@@ -51,6 +54,7 @@ svg {
 .linearGradientWord {
   background-color: rgba(255, 255, 255, 0.20) !important;
   background-image: radial-gradient(206.58% 199.41% at 16.85% 10%, #EC1D1D 0%, #4B2EFF 36.98%, #2ECDFF 65.1%, #9F54FF 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -62,6 +66,7 @@ svg {
 .linearGradientWord:hover {
   background-color: #FFFFFF !important;
   background-image: radial-gradient(#ffffff, #ffffff) !important;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;

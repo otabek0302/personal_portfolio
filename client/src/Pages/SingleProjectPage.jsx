@@ -5,6 +5,7 @@ import { Pagination } from 'swiper/modules';
 
 import { urlFor, client } from '../client';
 import Loader from '../Components/Loader';
+import LazyImage from '../Components/LazyImage';
 
 const SingleProjectPage = () => {
   const [project, setProject] = useState(null)
@@ -21,7 +22,7 @@ const SingleProjectPage = () => {
   return (
     <Container maxWidth="xxl" className='mt'>
       <Box sx={{ height: { xs: "181px", sm: "280px", md: "400px", lg: "500px", xl: "681px" } }} className="singleProjectBanner" >
-        <img width="100%" height="auto" src={urlFor(project?.imageUrl).url()} alt={project?.title} />
+        <LazyImage width="100%" height="auto" item={project} alt={project?.title} />
       </Box>
       <Grid container mt="50px" p="25px">
         <Grid item xs={12} md={6} sx={{ mb: { xs: "40px", md: "0px" } }}>
