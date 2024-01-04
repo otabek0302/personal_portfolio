@@ -64,7 +64,14 @@ const App = () => {
               </Suspense>
             }
           />
-          <Route path="*" element={<NotFound />} />
+          <Route
+            path="*"
+            element={
+              <Suspense fallback={<Loader />}>
+                <NotFound />
+              </Suspense>
+            }
+          />
         </Routes>
       </Layout>
     </div>

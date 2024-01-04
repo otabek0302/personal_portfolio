@@ -19,6 +19,7 @@ const Posts = () => {
     if (!posts.length) return <Loader />
 
     const lastPosts = posts.slice(-2)
+    console.log(posts);
     return (
         <Container maxWidth="xxl" className='customContainer' >
             <Grid container sx={{ flexDirection: { xs: "column-reverse", md: "row" } }} >
@@ -43,10 +44,10 @@ const Posts = () => {
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <Stack sx={{ p: { xs: "0px", lg: "30px" }, px: { sm: "30px", lg: "60px" }, gap: { xs: "10px", lg: "25px" } }} >
-                        <Typography color="white.white100" variant='h2' sx={{ textAlign: { xs: "center", md: "justify" }, }}>Project title and some additional information 🚀 </Typography>
+                        <Typography color="white.white100" variant='h2' sx={{ textAlign: { xs: "center", md: "justify" }, }}>Some blgs for vanila JavaScript 🚀 </Typography>
                         <Typography color="white.white30" variant='h4'></Typography>
                         <Typography color="white.white20" variant='p' sx={{ textAlign: { xs: "center", md: "justify" }, }}>
-                            Explain what your project is about: what kind of problem does it solve, who is the target group, and how does it provide a sufficient solution?
+                        Welcome to the JavaScript Today blog, your go-to source for all things related to JavaScript. As the most widely used programming language today, JavaScript takes center stage here. Explore our curated collection of top-tier JavaScript blogs delivering exceptional content.
                         </Typography>
                         <Box display="flex" justifyContent="center">
                             <Button variant='main' href='/posts'>View More</Button>

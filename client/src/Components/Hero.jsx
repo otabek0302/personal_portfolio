@@ -12,7 +12,14 @@ const Hero = () => {
                     <Typography color="white.white30" variant='p'>Hi  &#128406;  there I am</Typography>
                     <Typography sx={{ my: { xs: "8px", lg: "40px" } }} color="white.white100" variant='h2' textAlign="left" >Amonov Otabek</Typography>
                     <Typography mb={0.7} color="white.white30" variant='h5' textAlign="left" >Nice to meet you.</Typography>
-                    <Typography maxWidth={500} color="white.white20" variant='p' sx={{ textAlign: { xs: "justify", md: "left" } }} >Since beginning my journey as a freelance designer over 11 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</Typography>
+                    <Typography maxWidth={500} color="white.white20" variant='p' sx={{ textAlign: { xs: "justify", md: "left" } }} >
+                        I started learning to code 2 years ago and faced many problems getting into programming. But I really loved coding, so I kept going and didn't give up.
+                        Thanks to Allax, I've achieved significant strides in programming, life, and school. I grasped an important lesson during challenging moments: starting from scratch is okay because each new beginning is a chance to learn.
+                    </Typography>
+                    <br />  
+                    <Typography maxWidth={500} color="white.white20" variant='p' sx={{ textAlign: { xs: "justify", md: "left" } }}>
+                        I'm a new web developer with limited experience. In my free time, I enjoy recording  YouTube videos to my blog and I love to learn new things about 3D web development. Additionally, I'm a final-year student at HIT (Holon Institute of Technology), aiming to graduate with strong achievements.
+                    </Typography>
                     <Box mt={6} display="flex" gap={2}>
                         <Typography component="a" href='https://www.instagram.com/otabek_03.02/' ><Instagram /></Typography>
                         <Typography component="a" href='https://www.linkedin.com/in/otabek-amonov-2b97a8217/' ><LinkedIn /></Typography>
