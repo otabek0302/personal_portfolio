@@ -19,7 +19,6 @@ const Posts = () => {
     if (!posts.length) return <Loader />
 
     const lastPosts = posts.slice(-2)
-    console.log(posts);
     return (
         <Container maxWidth="xxl" className='customContainer' >
             <Grid container sx={{ flexDirection: { xs: "column-reverse", md: "row" } }} >
